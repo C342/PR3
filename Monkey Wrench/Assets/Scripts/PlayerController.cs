@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody rb;
     [SerializeField] float movementSpeed = 5f;
-    [SerializeField] float JumpForce = 5f;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
