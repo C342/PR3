@@ -19,7 +19,7 @@ public class PlayerLife : MonoBehaviour
 
     void Die()
     {
-        Invoke(nameof(ReloadLevel), 3.5f);
+        Invoke(nameof(ReloadLevel), 2f);
         dead = true;
 
     }
