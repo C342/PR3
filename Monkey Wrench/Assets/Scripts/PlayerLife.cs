@@ -1,18 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class PlayerLife : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    bool dead = false;
+    private void Update()
     {
-        
+        if (transform.position.y < -10f && !dead)
+        {
+            Die();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void Die()
     {
-        
+        Invoke(nameof(ReloadLevel), 3.5f);
+        dead = true;
+
+    }
+
+    void ReloadLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
