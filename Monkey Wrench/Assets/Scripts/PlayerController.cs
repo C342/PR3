@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Animations;
 using UnityEngine.Assertions.Must;
 
 public class PlayerController : MonoBehaviour
@@ -22,13 +23,5 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector3(horizontalInput * 5f, rb.velocity.y, verticalInput * 5f);
         Vector3 moveDirection = transform.right * horizontalInput + transform.forward * verticalInput;
         rb.velocity = new Vector3(moveDirection.x * movementSpeed, rb.velocity.y, moveDirection.z * movementSpeed);
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy Head"))
-        {
-            Destroy(collision.transform.parent.gameObject);
-        }
     }
 }
