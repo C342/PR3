@@ -578,10 +578,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c7bb25cbe100346a85f99707933596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: 5
   player: {fileID: 5005737518798984753}
-  margin: {x: 1, y: 1}
-  maxDistanceFromPlayer: 5
+  moveSpeed: 3
+  maxDistance: 5
 --- !u!4 &1992513357
 Transform:
   m_ObjectHideFlags: 0
@@ -826,7 +825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 838490424353575650, guid: d9975bcaee0b6c94bb86678fb96958a9, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7570467630959775354, guid: d9975bcaee0b6c94bb86678fb96958a9, type: 3}
       propertyPath: m_LocalScale.x
