@@ -1,5 +1,6 @@
 using UnityEngine;
-
+using System.Collections;
+using System.Collections.Generic;
 public class MouseLook : MonoBehaviour
 {
     public Transform player;        // Reference to the player
@@ -16,6 +17,8 @@ public class MouseLook : MonoBehaviour
 
     void Update()
     {
+ 
+
         // Check for right mouse button input
         if (Input.GetMouseButtonDown(1))
         {
