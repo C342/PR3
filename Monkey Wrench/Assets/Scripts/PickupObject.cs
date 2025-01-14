@@ -1,12 +1,7 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.UIElements;
 
-public class PickupObject : MonoBehaviour
+public class ObjectPickup : MonoBehaviour
 {
     private GameObject heldObject;
     public float radius = 2f;
@@ -17,6 +12,7 @@ public class PickupObject : MonoBehaviour
     {
         var t = transform;
         var pressedE = Input.GetKeyDown(KeyCode.E);
+
         if (heldObject)
         {
             if (pressedE)
@@ -25,6 +21,9 @@ public class PickupObject : MonoBehaviour
                 rigidBody.drag = 1f;
                 rigidBody.useGravity = true;
                 rigidBody.constraints = RigidbodyConstraints.None;
+
+                Physics.IgnoreCollision(heldObject.GetComponent<Collider>(), t.GetComponent<Collider>(), false);
+
                 heldObject = null;
             }
         }
@@ -43,6 +42,8 @@ public class PickupObject : MonoBehaviour
                     rigidBody.constraints = RigidbodyConstraints.FreezeRotation;
                     rigidBody.drag = 25f;
                     rigidBody.useGravity = false;
+
+                    Physics.IgnoreCollision(heldObject.GetComponent<Collider>(), t.GetComponent<Collider>(), true);
                 }
             }
         }
@@ -50,11 +51,14 @@ public class PickupObject : MonoBehaviour
 
     private void FixedUpdate()
     {
-        var t = transform;
-        var rigidBody = heldObject.GetComponent<Rigidbody>();
-        var moveTo = t.position + distance * t.forward + height * t.up;
-        var difference = moveTo - heldObject.transform.position;
-        rigidBody.AddForce(difference * 500);
-        heldObject.transform.rotation = t.rotation;
+        if (heldObject)
+        {
+            var t = transform;
+            var rigidBody = heldObject.GetComponent<Rigidbody>();
+            var moveTo = t.position + distance * t.forward + height * t.up;
+            var difference = moveTo - heldObject.transform.position;
+            rigidBody.AddForce(difference * 500);
+            heldObject.transform.rotation = t.rotation;
+        }
     }
 }
