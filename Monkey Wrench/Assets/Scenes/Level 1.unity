@@ -1793,9 +1793,10 @@ GameObject:
   - component: {fileID: 1711813856165485068}
   - component: {fileID: 3469287836937957065}
   - component: {fileID: 3469287836937957066}
+  - component: {fileID: 3469287836937957067}
   m_Layer: 0
   m_Name: Wrench
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1885,6 +1886,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.4, y: 0.02, z: 0.2}
   m_Center: {x: 7.902093e-10, y: 0.0019269383, z: -0.0037849918}
+--- !u!114 &3469287836937957067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148634123225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fd953647f475e14494be29eb9a69e5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3791428528456680524
 PrefabInstance:
   m_ObjectHideFlags: 0
