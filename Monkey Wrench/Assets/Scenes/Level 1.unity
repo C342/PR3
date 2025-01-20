@@ -606,8 +606,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -866.32306, y: 359.7131}
-  m_SizeDelta: {x: -1732.6555, y: -719.4318}
+  m_AnchoredPosition: {x: -879.2511, y: 379.63364}
+  m_SizeDelta: {x: -1758.512, y: -759.2646}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &655564114
 MonoBehaviour:
@@ -1897,6 +1897,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WrenchPickedUp: {fileID: 993193981}
   WrenchIcon: {fileID: 655564112}
+  playerTransform: {fileID: 5005737518798984753}
 --- !u!65 &3469287836937957066
 BoxCollider:
   m_ObjectHideFlags: 0
