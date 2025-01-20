@@ -20,12 +20,12 @@ public class WrenchInteract : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 WrenchIcon.SetActive(true);
             }
 
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 this.gameObject.SetActive(false);
 

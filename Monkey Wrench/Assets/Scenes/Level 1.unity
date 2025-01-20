@@ -606,8 +606,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -855.16174, y: 376.45868}
-  m_SizeDelta: {x: -1710.3307, y: -752.9188}
+  m_AnchoredPosition: {x: -866.32306, y: 359.7131}
+  m_SizeDelta: {x: -1732.6555, y: -719.4318}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &655564114
 MonoBehaviour:
@@ -851,7 +851,6 @@ GameObject:
   - component: {fileID: 993193982}
   - component: {fileID: 993193987}
   - component: {fileID: 993193986}
-  - component: {fileID: 993193988}
   m_Layer: 0
   m_Name: PlayerWrench
   m_TagString: Untagged
@@ -924,20 +923,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993193981}
   m_Mesh: {fileID: 4068373912626513877, guid: a4bf1f6ea7ff6d349a11341fa63e7bcd, type: 3}
---- !u!114 &993193988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 993193981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47af2abfe3df16c45a902bf85f94bcec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WrenchPickedUp: {fileID: 0}
-  WrenchIcon: {fileID: 0}
 --- !u!1001 &993657806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1931,8 +1916,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.4, y: 0.02, z: 0.2}
-  m_Center: {x: 7.902093e-10, y: 0.0019269383, z: -0.0037849918}
+  m_Size: {x: 0.40000004, y: 0.031167658, z: 0.19999997}
+  m_Center: {x: -1.5868818e-16, y: 0.0010826794, z: -0.0037849932}
 --- !u!114 &3469287836937957067
 MonoBehaviour:
   m_ObjectHideFlags: 0
