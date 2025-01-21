@@ -1289,6 +1289,7 @@ MonoBehaviour:
   throwablePrefab: {fileID: 993193981}
   throwOrigin: {fileID: 1257249877}
   throwForce: 10
+  Thrown: 0
   throwKey: 323
 --- !u!1001 &993657806
 PrefabInstance:
