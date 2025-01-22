@@ -16,21 +16,15 @@ public class WrenchInteract : MonoBehaviour
         WrenchIcon.SetActive(false);
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                WrenchIcon.SetActive(true);
-            }
+            WrenchIcon.SetActive(true);
 
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                this.gameObject.SetActive(false);
+            this.gameObject.SetActive(false);
 
-                WrenchPickedUp.SetActive(true);
-            }
+            WrenchPickedUp.SetActive(true);
         }
 
         if (other.gameObject.tag == null)
