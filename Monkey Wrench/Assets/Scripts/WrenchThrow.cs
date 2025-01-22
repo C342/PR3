@@ -36,7 +36,7 @@ public class WrenchThrow : MonoBehaviour
             
             Debug.LogWarning("ThrowablePrefab or ThrowOrigin is not assigned.");
             
-            Debug.Log("second if ");
+            Debug.Log("second if");
             Thrown = false;
             return;
             
