@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 13918653}
   - component: {fileID: 13918652}
   - component: {fileID: 13918651}
-  - component: {fileID: 13918654}
   m_Layer: 5
   m_Name: HUDcanvas
   m_TagString: Untagged
@@ -226,26 +225,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &13918654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 13918649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ef2170d80a96e4a8c8713e0ced9ff7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  attackPoint: {fileID: 0}
-  objectToThrow: {fileID: 0}
-  TotalThrows: 0
-  throwCooldown: 0
-  throwKey: 323
-  throwForce: 0
-  throwUpwardForce: 0
 --- !u!1 &45774466
 GameObject:
   m_ObjectHideFlags: 0
@@ -4320,42 +4299,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7707a14cf86804e4d97ac3a88b00748e, type: 3}
---- !u!1 &6244286875387189622 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7624587648200294455, guid: 5acfbe40bf1f1644e8343a5d280f596f, type: 3}
-  m_PrefabInstance: {fileID: 7813242991558263455}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6765525362280891342 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098845904475462285, guid: 5acfbe40bf1f1644e8343a5d280f596f, type: 3}
   m_PrefabInstance: {fileID: 7813242991558263455}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6765525362280891343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6244286875387189622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 10
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
-  renderers: []
-  outlineMaskMaterial: {fileID: 0}
-  outlineFillMaterial: {fileID: 0}
-  needsUpdate: 1
 --- !u!1001 &7813242991558263455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4423,10 +4371,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7624587648200294455, guid: 5acfbe40bf1f1644e8343a5d280f596f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6765525362280891343}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5acfbe40bf1f1644e8343a5d280f596f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
