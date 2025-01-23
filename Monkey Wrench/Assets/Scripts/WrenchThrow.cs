@@ -6,50 +6,62 @@ using UnityEngine.Rendering;
 
 public class WrenchThrow : MonoBehaviour
 {
-    [Header("Throw Settings")]
-    public GameObject throwablePrefab;
-    public Transform throwOrigin;
-    public float throwForce = 10f;
-    public bool Thrown = true;
+    public Transform camera;
+    public Transform attackPoint;
+    public GameObject objectToThrow;
 
-    [Header("Input Settings")]
+    [Header("Settings")]
+    public int TotalThrows;
+    public float throwCooldown;
+
+    [Header("Settings")]
     public KeyCode throwKey = KeyCode.Mouse0;
+    public float throwForce;
+    public float throwUpwardForce;
+
+    bool ReadyToThrow;
 
     private void Start()
     {
-        Thrown = true;
-    }
-    void Update()
-    {
-        Debug.Log(Thrown);
-        if (Thrown && Input.GetKeyDown(throwKey))
-        {
-            Debug.Log("first if ");
-            ThrowObject();
-        }
+        ReadyToThrow = true;
     }
 
-    private void ThrowObject()
+    private void Update()
     {
-        if (throwablePrefab == null || throwOrigin == null)
+        if (Input.GetKeyDown(throwKey) && ReadyToThrow && TotalThrows > 0)
         {
-            
-            Debug.LogWarning("ThrowablePrefab or ThrowOrigin is not assigned.");
-            
-            Debug.Log("second if");
-            Thrown = false;
-            return;
-            
+            Throw();
+        }
+    }
+
+    private void Throw()
+    {
+        ReadyToThrow = false;
+
+        GameObject projectile = Instantiate(objectToThrow, attackPoint.position, camera.rotation);
+
+        Rigidbody projectileRb = projectile.GetComponent<Rigidbody>();
+
+        Vector3 forceDirection = camera.transform.forward;
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(camera.position, camera.forward, out hit, 500f))
+        {
+            forceDirection = (hit.point - attackPoint.position).normalized;
         }
 
-        GameObject thrownObject = Instantiate(throwablePrefab, throwOrigin.position, throwOrigin.rotation);
+        Vector3 forceToAdd = forceDirection * throwForce + transform.up * throwUpwardForce;
 
-        Rigidbody rb = thrownObject.GetComponent<Rigidbody>();
-        if (rb == null)
-        {
-            rb = thrownObject.AddComponent<Rigidbody>();
-        }
+        projectileRb.AddForce(forceToAdd, ForceMode.Impulse);
 
-        rb.AddForce(throwOrigin.forward * throwForce, ForceMode.Impulse);
+        TotalThrows--;
+
+        Invoke(nameof(ResetThrow), throwCooldown);
+    }
+
+    private void ResetThrow()
+    {
+        ReadyToThrow = true;
     }
 }
