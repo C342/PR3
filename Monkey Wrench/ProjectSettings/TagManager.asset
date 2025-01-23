@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Pickupable
   - Selectable
+  - Enemy Body
+  - Enemy Head
   layers:
   - Default
   - TransparentFX

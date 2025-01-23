@@ -5,9 +5,10 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
-
 public class PlayerLife : MonoBehaviour
 {
+    [SerializeField] AudioSource deathSound;
+
     bool dead = false;
     private void Update()
     {
@@ -17,10 +18,22 @@ public class PlayerLife : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy Body"))
+        {
+            GetComponent<MeshRenderer>().enabled = false;
+            GetComponent<Rigidbody>().isKinematic = true;
+            GetComponent<PlayerController>().enabled = false;
+            Die();
+        }
+    }
+
     void Die()
     {
-        Invoke(nameof(ReloadLevel), 2f);
+        Invoke(nameof(ReloadLevel), 1.5f);
         dead = true;
+        deathSound.Play();
 
     }
 
