@@ -829,8 +829,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fd953647f475e14494be29eb9a69e5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlight: {fileID: 0}
-  selection: {fileID: 0}
 --- !u!4 &641528849 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4079391813584830, guid: c1c88308ebb5d2541a282905b854ee4c, type: 3}
