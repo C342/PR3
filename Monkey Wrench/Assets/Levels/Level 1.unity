@@ -4025,7 +4025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorTransform: {fileID: 543450652361113310}
-  openOffset: {x: 0, y: 0, z: -3}
+  openOffset: {x: 0, y: 0, z: -2.5}
   speed: 1.25
 --- !u!4 &1512499077 stripped
 Transform:
