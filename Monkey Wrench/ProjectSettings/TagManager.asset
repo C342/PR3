@@ -8,6 +8,7 @@ TagManager:
   - Selectable
   - Enemy Body
   - Enemy Head
+  - BGM
   layers:
   - Default
   - TransparentFX
