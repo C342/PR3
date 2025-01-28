@@ -4,53 +4,62 @@ using UnityEngine;
 
 public class ElectricalBox : MonoBehaviour
 {
-    public GameObject door; // Assign your animated door in the Inspector
-    public string requiredTag = "Pickupable"; // Set the tag for valid objects
-    private int objectCount = 0;
-    private const int requiredObjects = 3;
-    private Animator doorAnimator;
-
-    private void Start()
+    public string targetTag = "Pickupable";
+    public float detectionRadius = 2f;
+    public enum DoorEvents
     {
-        if (door != null)
-            doorAnimator = door.GetComponent<Animator>();
+        None,
+        Playerdetected
     }
 
-    private void OnTriggerEnter(Collider other)
+    private int destroyedCount = 0;
+
+    void Update()
     {
-        if (other.CompareTag(requiredTag)) // Check if object has the required tag
+        Collider[] nearbyObjects = Physics.OverlapSphere(transform.position, detectionRadius);
+
+        foreach (Collider col in nearbyObjects)
         {
-            objectCount++;
-            Destroy(other.gameObject); // Destroy the object when placed
-            CheckPuzzleCompletion();
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag(requiredTag))
-        {
-            objectCount--;
-
-            // Ensure count doesn't go negative
-            objectCount = Mathf.Max(objectCount, 0);
-
-            CheckPuzzleCompletion();
-        }
-    }
-
-    private void CheckPuzzleCompletion()
-    {
-        if (doorAnimator != null)
-        {
-            if (objectCount >= requiredObjects)
+            if (col.CompareTag(targetTag))
             {
-                doorAnimator.SetTrigger("OpenDoor");
-            }
-            else
-            {
-                doorAnimator.SetTrigger("CloseDoor");
+                Destroy(col.gameObject);
+
+                destroyedCount++;
+
+                if (destroyedCount >= 3)
+                {
+                    OpenDoor();
+                }
             }
         }
     }
+    public enum DoorEvents
+    {
+        None,
+        Playerdetected
+    }
+
+    private DoorEvents events = DoorEvents.None;
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            events = DoorEvents.PlayerDetected;
+        }
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            events = DoorEvents.None;
+        }
+    }
+
+    public DoorEvents Events
+    {
+        get { return events; }
+    }
+
 }
