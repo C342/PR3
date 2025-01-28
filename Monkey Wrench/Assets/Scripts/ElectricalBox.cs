@@ -5,7 +5,7 @@ using UnityEngine;
 public class ElectricalBox : MonoBehaviour
 {
     public GameObject door; // Assign your animated door in the Inspector
-    public string requiredTag = "PuzzleObject"; // Set the tag for valid objects
+    public string requiredTag = "Pickupable"; // Set the tag for valid objects
     private int objectCount = 0;
     private const int requiredObjects = 3;
     private Animator doorAnimator;
