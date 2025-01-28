@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7061642316741099850}
   - component: {fileID: 5681708326201804690}
   - component: {fileID: 4193001427219295368}
+  - component: {fileID: 1299927441653890326}
   m_Layer: 0
   m_Name: AirlockDoor
   m_TagString: Untagged
@@ -26,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 622440134708245874}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 20.93, y: 0.944, z: 53.3}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -11.082008, y: 0.1907897, z: 0.2992363}
   m_LocalScale: {x: 231.79051, y: 309.05402, z: 30.905405}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -88,3 +89,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1299927441653890326
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622440134708245874}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.010000003, y: 0.01, z: 0.015000003}
+  m_Center: {x: 0, y: 2.3283064e-10, z: 0.000000059604645}
