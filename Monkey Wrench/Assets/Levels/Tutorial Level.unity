@@ -3889,7 +3889,7 @@ MonoBehaviour:
   targetTag: Pickupable
   detectionRadius: 1
   door: {fileID: 543450652361113310}
-  openPosition: {x: 14.276, y: -1.666269, z: 61.717}
+  openPosition: {x: -2, y: 0.1907897, z: -2}
   moveSpeed: 1.25
 --- !u!1001 &1520461974
 PrefabInstance:
@@ -5448,7 +5448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7061642316741099850, guid: 8e16e39ae51233a4ea4eba4866a95661, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.285
+      value: 0.34
       objectReference: {fileID: 0}
     - target: {fileID: 7061642316741099850, guid: 8e16e39ae51233a4ea4eba4866a95661, type: 3}
       propertyPath: m_LocalRotation.w
