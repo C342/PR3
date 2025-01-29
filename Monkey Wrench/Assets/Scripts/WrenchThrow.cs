@@ -10,7 +10,7 @@ public class WrenchThrow : MonoBehaviour
     public GameObject objectToThrow; // The object to be thrown (usually an object with a Rigidbody)
     public Camera playerCamera; // Reference to the camera (player's perspective)
 
-    private bool hasThrown = false; // Flag to prevent re-throwing the object
+    public bool hasThrown = false; // Flag to prevent re-throwing the object
 
     private void Update()
     {
