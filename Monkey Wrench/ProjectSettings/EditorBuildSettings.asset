@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Levels/InDev.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Levels/Tutorial Level.unity
-    guid: d25118b712b17a04cb5648bc62a22137
+    path: Assets/Levels/Settings.unity
+    guid: 79cd9f6dc9f67be4e8d773bf6aa33cdc
+  - enabled: 1
+    path: Assets/Levels/Credits.unity
+    guid: ca17300a9a6877f418a04d54bb25cafe
   m_configObjects: {}
