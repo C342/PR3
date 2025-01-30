@@ -9,6 +9,7 @@ TagManager:
   - Enemy Body
   - Enemy Head
   - BGM
+  - Wrench
   layers:
   - Default
   - TransparentFX

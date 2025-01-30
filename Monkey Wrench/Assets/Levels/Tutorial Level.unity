@@ -1171,7 +1171,7 @@ Transform:
   m_GameObject: {fileID: 436173119}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5422435, y: 0, z: 0, w: 0.84022146}
-  m_LocalPosition: {x: 0.893, y: 0.311, z: 0.066}
+  m_LocalPosition: {x: 0.608, y: -0.457, z: -0.337}
   m_LocalScale: {x: 6.5338373, y: 91.47283, z: 10.654017}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1189,7 +1189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77ef2170d80a96e4a8c8713e0ced9ff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwForce: 25
+  throwForce: 20
   objectToThrow: {fileID: 436173119}
   playerCamera: {fileID: 657491962}
   hasThrown: 0

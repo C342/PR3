@@ -30,7 +30,7 @@ public class ElectricalBox : MonoBehaviour
                 destroyedCount++;
 
                 // Check if 3 objects have been destroyed and the door hasn't opened yet
-                if (destroyedCount >= 0 && !doorIsOpen)
+                if (destroyedCount >= 3 && !doorIsOpen)
                 {
                     doorIsOpen = true;  // Set the flag to true so the door won't open again
                     StartCoroutine(OpenDoorCoroutine());  // Start the door opening animation
