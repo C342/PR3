@@ -1078,6 +1078,7 @@ GameObject:
   - component: {fileID: 436173121}
   - component: {fileID: 436173120}
   - component: {fileID: 436173124}
+  - component: {fileID: 436173125}
   m_Layer: 0
   m_Name: PlayerWrench
   m_TagString: Untagged
@@ -1193,6 +1194,27 @@ MonoBehaviour:
   objectToThrow: {fileID: 436173119}
   playerCamera: {fileID: 657491962}
   hasThrown: 0
+--- !u!65 &436173125
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436173119}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.009999999, y: 0.009742442, z: 0.020163398}
+  m_Center: {x: -0.000000007450581, y: 0.0019269384, z: -0.0037849897}
 --- !u!1001 &456438195
 PrefabInstance:
   m_ObjectHideFlags: 0
