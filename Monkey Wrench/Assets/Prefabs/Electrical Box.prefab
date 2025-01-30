@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2778842006098351767
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: a7b675f8d525df34989c5144f6fe8b3d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 127.706894
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a7b675f8d525df34989c5144f6fe8b3d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 141.41272
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a7b675f8d525df34989c5144f6fe8b3d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 35.836376
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a7b675f8d525df34989c5144f6fe8b3d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.276
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a7b675f8d525df34989c5144f6fe8b3d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.6662692
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a7b675f8d525df34989c5144f6fe8b3d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 61.717
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a7b675f8d525df34989c5144f6fe8b3d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a7b675f8d525df34989c5144f6fe8b3d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a7b675f8d525df34989c5144f6fe8b3d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a7b675f8d525df34989c5144f6fe8b3d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a7b675f8d525df34989c5144f6fe8b3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a7b675f8d525df34989c5144f6fe8b3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a7b675f8d525df34989c5144f6fe8b3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a7b675f8d525df34989c5144f6fe8b3d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3af58be799d06894e9a5587335212cf8, type: 2}
+    - target: {fileID: 919132149155446097, guid: a7b675f8d525df34989c5144f6fe8b3d, type: 3}
+      propertyPath: m_Name
+      value: Electrical Box
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a7b675f8d525df34989c5144f6fe8b3d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 364265917475125800}
+  m_SourcePrefab: {fileID: 100100000, guid: a7b675f8d525df34989c5144f6fe8b3d, type: 3}
+--- !u!1 &3049226965402790854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a7b675f8d525df34989c5144f6fe8b3d, type: 3}
+  m_PrefabInstance: {fileID: 2778842006098351767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &364265917475125800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3049226965402790854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1749468bd26284e4d845f47d624f422a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: Pickupable
+  detectionRadius: 1
+  door: {fileID: 0}
+  openPosition: {x: 20.83, y: 0.95, z: 50.98}
+  moveSpeed: 1.25
