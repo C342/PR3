@@ -11,6 +11,7 @@ public class WrenchThrow : MonoBehaviour
     public Camera playerCamera; // Reference to the camera (player's perspective)
 
     public bool hasThrown = false; // Flag to prevent re-throwing the object
+    public bool isThrowing = false;
 
     private void Update()
     {
@@ -18,6 +19,7 @@ public class WrenchThrow : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && !hasThrown)
         {
             ThrowObjectAtCursor();
+            isThrowing = true;
         }
     }
 

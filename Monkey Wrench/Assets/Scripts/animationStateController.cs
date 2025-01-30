@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,6 @@ public class animationStateController : MonoBehaviour
 {
     Animator animator;
     int isWalkingHash;
-    public WrenchThrow wt;
 
     void Start()
     {
@@ -18,7 +18,6 @@ public class animationStateController : MonoBehaviour
     void Update()
     {
         bool isWalking = animator.GetBool(isWalkingHash);
-        bool isThrowing = animator.GetBool("isThrowing");
         bool forwardPressed = Input.GetKey("w");
 
         if (!isWalking && forwardPressed)
@@ -31,12 +30,12 @@ public class animationStateController : MonoBehaviour
             animator.SetBool(isWalkingHash, false);
         }
 
-        if (wt.hasThrown == true)
+        if (Input.GetButtonDown("Fire1"))
         {
             animator.SetBool("isThrowing", true);
         }
 
-        if (wt.hasThrown == false)
+        if (!Input.GetButtonDown("Fire1"))
         {
             animator.SetBool("isThrowing", false);
         }

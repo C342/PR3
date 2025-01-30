@@ -36,6 +36,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: isThrowing
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: isWalking
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4024967470871595083}
   m_Solo: 0
@@ -167,6 +170,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: isThrowing
     m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: isWalking
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3304296813152267618}
   m_Solo: 0
@@ -194,7 +200,7 @@ AnimatorController:
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
-    m_DefaultBool: 0
+    m_DefaultBool: 1
     m_Controller: {fileID: 9100000}
   - m_Name: isThrowing
     m_Type: 4

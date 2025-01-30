@@ -1193,6 +1193,7 @@ MonoBehaviour:
   objectToThrow: {fileID: 436173119}
   playerCamera: {fileID: 657491962}
   hasThrown: 0
+  isThrowing: 0
 --- !u!1001 &456438195
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1883,6 +1884,7 @@ MonoBehaviour:
   objectToThrow: {fileID: 436173119}
   playerCamera: {fileID: 0}
   hasThrown: 0
+  isThrowing: 0
 --- !u!114 &657491959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2165,7 +2167,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93572c897f018ff4da60cdba9982a7ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wt: {fileID: 0}
 --- !u!1 &799214540
 GameObject:
   m_ObjectHideFlags: 0
@@ -2474,15 +2475,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cef4d83716c93f34f90c4b8099ec16a2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.43
+      value: -0.09900004
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cef4d83716c93f34f90c4b8099ec16a2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.623
+      value: -0.61
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cef4d83716c93f34f90c4b8099ec16a2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.15
+      value: 0.34900004
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cef4d83716c93f34f90c4b8099ec16a2, type: 3}
       propertyPath: m_LocalRotation.w

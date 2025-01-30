@@ -9,6 +9,4 @@ public class MenuMusic : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
     }
-
-    if
 }
