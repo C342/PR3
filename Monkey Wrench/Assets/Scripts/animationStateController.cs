@@ -18,17 +18,32 @@ public class animationStateController : MonoBehaviour
     void Update()
     {
         bool isWalking = animator.GetBool(isWalkingHash);
-        bool forwardPressed = Input.GetKey("w");
 
-        if (!isWalking && forwardPressed)
+        if (Input.GetKey("w"))
         {
             animator.SetBool(isWalkingHash, true);
         }
 
-        if (isWalking && !forwardPressed)
+        else if (Input.GetKey("a"))
+        {
+            animator.SetBool(isWalkingHash, true);
+        }
+
+        else if (Input.GetKey("s"))
+        {
+            animator.SetBool(isWalkingHash, true);
+        }
+
+        else if (Input.GetKey("d"))
+        {
+            animator.SetBool(isWalkingHash, true);
+        }
+
+        else
         {
             animator.SetBool(isWalkingHash, false);
         }
+
 
         if (Input.GetButtonDown("Fire1"))
         {
