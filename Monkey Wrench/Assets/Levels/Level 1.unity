@@ -1932,7 +1932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77ef2170d80a96e4a8c8713e0ced9ff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwForce: 50
+  throwForce: 25
   objectToThrow: {fileID: 436173119}
   playerCamera: {fileID: 0}
   hasThrown: 0
@@ -1948,7 +1948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ba544cd4440c994ab6d549852ec31cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 2
+  radius: 1.75
   distance: 2.25
   height: 0.5
 --- !u!114 &657491960
@@ -3163,13 +3163,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115767780}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.9628232, y: 0.020727908, z: 0.25798765, w: -0.077357605}
+  m_LocalRotation: {x: 0.9082892, y: -0.04807999, z: 0.25431478, w: -0.32866862}
   m_LocalPosition: {x: -3.59, y: 9.49, z: -4.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 189.187, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 214.932, y: -37.017, z: 18.085999}
 --- !u!1 &1185854070
 GameObject:
   m_ObjectHideFlags: 0
