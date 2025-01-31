@@ -11,7 +11,8 @@ public class ElectricalBox : MonoBehaviour
     public float moveSpeed = 2f;             // Speed at which the door moves
 
     private int destroyedCount = 0;          // Count of destroyed objects
-    private bool doorIsOpen = false;         // Flag to check if the door has already opened
+    private bool doorIsOpen = false;      // Flag to check if the door has already opened
+    public AudioClip WireConnectionAudio;
 
     void Update()
     {
@@ -50,5 +51,7 @@ public class ElectricalBox : MonoBehaviour
 
         // Ensure the door reaches the exact open position
         door.position = openPosition;
+
+        
     }
 }

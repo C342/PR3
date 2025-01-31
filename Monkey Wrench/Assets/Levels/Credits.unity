@@ -742,7 +742,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1149995041}
         m_TargetAssemblyTypeName: StartMenu, Assembly-CSharp
-        m_MethodName: MainMenu
+        m_MethodName: CreditsToMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -957,7 +957,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: bf8ff235ff3d4d54aa5a2cbcd6a7b086, type: 3}
+  m_Texture: {fileID: 2800000, guid: c416f082410dbb443b4fa79534bd48ef, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1171,7 +1171,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

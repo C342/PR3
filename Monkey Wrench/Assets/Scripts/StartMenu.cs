@@ -20,8 +20,12 @@ public class StartMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
     }
 
-    public void MainMenu()
+    public void SettingsToMainMenu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+    }
+    public void CreditsToMainMenu()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
     }
 }
